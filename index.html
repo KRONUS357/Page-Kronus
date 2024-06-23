@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя перша сторінка</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Підключення зовнішнього CSS -->
+    <style>
+        /* Вбудований CSS */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        p {
+            font-size: 18px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+    <link rel="icon" href="favicon.ico"> <!-- Додавання фавікона -->
+</head>
+<body>
+    <header>
+        <h1>Вітаю на моїй першій HTML сторінці!</h1>
+    </header>
+    <div class="container">
+        <p>Це приклад простої веб-сторінки, створеної за допомогою HTML.</p>
+        <img src="example.jpg" alt="Приклад зображення" style="max-width:100%;">
+        <ul>
+            <li>Пункт списку 1</li>
+            <li>Пункт списку 2</li>
+            <li>Пункт списку 3</li>
+        </ul>
+        <table border="1" style="width:100%; margin-top:20px;">
+            <tr>
+                <th>Стовпець 1</th>
+                <th>Стовпець 2</th>
+            </tr>
+            <tr>
+                <td>Значення 1</td>
+                <td>Значення 2</td>
+            </tr>
+            <tr>
+                <td>Значення 3</td>
+                <td>Значення 4</td>
+            </tr>
+        </table>
+        <form style="margin-top:20px;">
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name">
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <br><br>
+            <input type="submit" value="Відправити">
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Моя перша сторінка</p>
+    </footer>
+    <script>
+        // JavaScript для інтерактивності
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Форма відправлена!');
+        });
+    </script>
+</body>
+</html>
